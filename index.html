@@ -9,12 +9,85 @@
 <div class="container">
 <div class="card">
     <div class="card-header">
-        Featured
+        Questão 2 - Exibe Mensagem
     </div>
     <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="form-group">
+            <button onclick="exibemensagem()" class="btn btn-primary" id="exibe">Calcular</button>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        Featured
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <label for="peso">Informe o Valor 1</label>
+            <input type="text" class="form-control" id="maiorval1" placeholder="valor 1">
+        </div>
+        <div class="form-group">
+            <label for="altura">Informe o Valor 2</label>
+            <input type="text" class="form-control" id="maiorval2" placeholder="valor 2">
+        </div>
+        <div class="form-group">
+            <label for="altura">Informe o Valor 3</label>
+            <input type="text" class="form-control" id="maiorval3" placeholder="valor 2">
+        </div>
+        <div class="form-group">
+            <button onclick="maiorvalor()" class="btn btn-primary" id="calcular">Calcular</button>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        Featured
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <label for="idade">Informe a Idade:</label>
+            <input type="text" class="form-control" id="idade" placeholder="Idade">
+        </div>
+        
+        <div class="form-group">
+            <button onclick="idade()" class="btn btn-primary" id="calcular">Calcular</button>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        Featured
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <label for="peso">Informe o Valor 1</label>
+            <input type="text" class="form-control" id="valmedia1" placeholder="valor 1">
+        </div>
+        <div class="form-group">
+            <label for="altura">Informe o Valor 2</label>
+            <input type="text" class="form-control" id="valmedia2" placeholder="valor 2">
+        </div>
+        <div class="form-group">
+            <label for="altura">Informe o Valor 3</label>
+            <input type="text" class="form-control" id="valmedia3" placeholder="valor 2">
+        </div>
+        <div class="form-group">
+            <button onclick="media()" class="btn btn-primary" id="calcular">Calcular</button>
+        </div>
+
+
+
     </div>
 </div>
 
@@ -29,10 +102,10 @@
             </div>
             <div class="form-group">
                 <label for="altura">Informe a altura</label>
-                <input type="text" class="form-control" id="altura" placeholder="altura">
+                <input type="text" class="form-control" id="altura" placeholder="altura - Use o 'ponto'">
             </div>
             <div class="form-group">
-                <button class="btn btn-primary" id="calcular">Calcular</button>
+                <button onclick="imc()" class="btn btn-primary" id="calcular">Calcular</button>
             </div>
 
 
